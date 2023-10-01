@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="618.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.modCustomersScreen">
+   <children>
+      <Button fx:id="modCusSaveButt" layoutX="258.0" layoutY="372.0" mnemonicParsing="false" onAction="#saveModCus" text="Save" />
+      <Button fx:id="modCusCancel" layoutX="322.0" layoutY="372.0" mnemonicParsing="false" onAction="#cancelModCus" text="Cancel" />
+      <Label layoutX="29.0" layoutY="14.0" text="Modify Customers" />
+      <Label layoutX="113.0" layoutY="96.0" text="ID" />
+      <Label layoutX="108.0" layoutY="166.0" text="Address" />
+      <Label layoutX="112.0" layoutY="208.0" text="Phone" />
+      <Label layoutX="121.0" layoutY="342.0" text="Zip" />
+      <Label layoutX="113.0" layoutY="300.0" text="State/Province" />
+      <Label layoutX="113.0" layoutY="252.0" text="Country" />
+      <ComboBox fx:id="modCusCountry" layoutX="223.0" layoutY="248.0" onAction="#onModCountry" prefWidth="150.0" />
+      <ComboBox fx:id="modCusState" layoutX="222.0" layoutY="296.0" onAction="#onModState" prefWidth="150.0" />
+      <TextField fx:id="modCusID" disable="true" layoutX="223.0" layoutY="92.0" promptText="Auto Generated" />
+      <TextField fx:id="modCusAddress" layoutX="222.0" layoutY="162.0" />
+      <TextField fx:id="modCusPhone" layoutX="222.0" layoutY="204.0" />
+      <TextField fx:id="modCusZip" layoutX="223.0" layoutY="338.0" />
+      <Label layoutX="109.0" layoutY="127.0" prefHeight="26.0" prefWidth="34.0" text="Name" />
+      <TextField fx:id="modCusName" layoutX="222.0" layoutY="127.0" />
+   </children>
+</AnchorPane>

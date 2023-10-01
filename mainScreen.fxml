@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="583.0" prefWidth="965.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.mainScreen">
+   <children>
+      <TableView fx:id="appTView" layoutY="46.0" prefHeight="200.0" prefWidth="954.0">
+        <columns>
+          <TableColumn fx:id="appIdCol" prefWidth="69.19997882843018" text="ID" />
+          <TableColumn fx:id="appTitleCol" prefWidth="73.5999755859375" text="Title" />
+            <TableColumn fx:id="appTypeCol" prefWidth="64.0" text="Type " />
+            <TableColumn fx:id="appDescrCol" prefWidth="76.80000305175781" text="Description" />
+            <TableColumn fx:id="appLocationCol" prefWidth="94.0" text="Location" />
+            <TableColumn fx:id="appStartDateCol" prefWidth="175.79998779296875" text="Start Date/Time" />
+            <TableColumn fx:id="appEndDateCol" prefWidth="162.60003662109375" text="End Date/Time" />
+            <TableColumn fx:id="appContactIDCol" prefWidth="97.199951171875" text="Contact" />
+            <TableColumn fx:id="appCusIDCol" prefWidth="82.0" text="Customer Id" />
+            <TableColumn fx:id="appUserIdCol" prefWidth="61.199951171875" text="User Id" />
+        </columns>
+      </TableView>
+      <TableView fx:id="custTView" layoutX="14.0" layoutY="325.0" prefHeight="200.0" prefWidth="756.0">
+        <columns>
+          <TableColumn fx:id="custIDCol" prefWidth="62.399996757507324" text="ID" />
+          <TableColumn fx:id="custNameCol" prefWidth="120.0" text="Name" />
+            <TableColumn fx:id="custAddressCol" prefWidth="138.99998474121094" text="Address" />
+            <TableColumn fx:id="custPhoneCol" prefWidth="137.80001831054688" text="Phone" />
+            <TableColumn fx:id="custStateCol" prefWidth="157.0" text="State/Province" />
+            <TableColumn fx:id="custZipCol" prefWidth="140.0" text="Zip" />
+            
+        </columns>
+      </TableView>
+      <Label layoutX="14.0" layoutY="14.0" text="Appointments" />
+      <Label layoutX="14.0" layoutY="283.0" text="Customers" />
+      <Button fx:id="appADD" layoutX="775.0" layoutY="266.0" mnemonicParsing="false" onAction="#onAppAddClick" text="Add" />
+      <Button fx:id="appMod" layoutX="826.0" layoutY="266.0" mnemonicParsing="false" onAction="#onAppModClick" text="Modify" />
+      <Button fx:id="appDelete" layoutX="900.0" layoutY="266.0" mnemonicParsing="false" onAction="#onAppDeleteClick" text="Delete" />
+      <Button fx:id="cusAdd" layoutX="584.0" layoutY="534.0" mnemonicParsing="false" onAction="#cusAddClick" text="Add" />
+      <Button fx:id="cusMod" layoutX="642.0" layoutY="534.0" mnemonicParsing="false" onAction="#cusModClick" text="Modify" />
+      <Button fx:id="cusDelete" layoutX="715.0" layoutY="534.0" mnemonicParsing="false" onAction="#cusDeleteClick" text="Delete" />
+      <Button fx:id="reportsButt" layoutX="803.0" layoutY="325.0" mnemonicParsing="false" onAction="#onReportsClick" prefHeight="102.0" prefWidth="131.0" text="Reports" />
+      <Button fx:id="exitMain" layoutX="805.0" layoutY="455.0" mnemonicParsing="false" onAction="#onExitMain" prefHeight="69.0" prefWidth="131.0" text="Exit" />
+      <RadioButton fx:id="allAppRadio" layoutX="538.0" layoutY="14.0" mnemonicParsing="false" onAction="#onAllApps" selected="true" text="All Appointments">
+         <toggleGroup>
+            <ToggleGroup fx:id="appFilter" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="weeklyAppRadio" layoutX="668.0" layoutY="14.0" mnemonicParsing="false" onAction="#onWeeklyApps" text="Weekly Appointments" toggleGroup="$appFilter" />
+      <RadioButton fx:id="monthlyAppRadio" layoutX="813.0" layoutY="14.0" mnemonicParsing="false" onAction="#onMonthlyApps" text="Monthly Appointments" toggleGroup="$appFilter" />
+   </children>
+</AnchorPane>

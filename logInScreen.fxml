@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.logInScreen">
+   <children>
+      <PasswordField fx:id="pWordTextBox" layoutX="325.0" layoutY="310.0" />
+      <Label fx:id="uNameLabel" layoutX="229.0" layoutY="229.0" text="User Name" />
+      <TextField fx:id="uNameTextBox" layoutX="325.0" layoutY="225.0" />
+      <Label fx:id="pWordLabel" layoutX="233.0" layoutY="314.0" text="Password" />
+      <Button fx:id="enterButt" layoutX="378.0" layoutY="432.0" mnemonicParsing="false" onAction="#enterButt" text="Enter" />
+      <Button fx:id="exitButt" layoutX="440.0" layoutY="432.0" mnemonicParsing="false" onAction="#onExitClick" text="Exit" />
+      <TextField fx:id="zoneIDField" editable="false" layoutX="630.0" layoutY="22.0" />
+      <Label fx:id="zoneIDLabel" layoutX="524.0" layoutY="26.0" text="Location" />
+      <Label fx:id="logInLabel" layoutX="386.0" layoutY="140.0" text="Log In" />
+   </children>
+</AnchorPane>

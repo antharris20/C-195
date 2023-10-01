@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="546.0" prefWidth="461.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.modAppointmentScreen">
+    <children>
+        <Label layoutX="82.0" layoutY="79.0" text="ID" />
+        <Label layoutX="80.0" layoutY="169.0" text="Description" />
+        <Label layoutX="81.0" layoutY="111.0" text="Title" />
+        <Label layoutX="81.0" layoutY="140.0" text="Type" />
+        <Label layoutX="120.0" layoutY="149.0" />
+        <Label layoutX="140.0" layoutY="169.0" />
+        <Label layoutX="160.0" layoutY="189.0" />
+        <Label layoutX="79.0" layoutY="223.0" prefHeight="26.0" prefWidth="54.0" text="Start Date" />
+        <Label layoutX="77.0" layoutY="292.0" text="End Date" />
+        <Label layoutX="79.0" layoutY="198.0" text="Location" />
+        <Label layoutX="82.0" layoutY="351.0" text="Contact ID" />
+        <Label layoutX="77.0" layoutY="386.0" text="Customer ID" />
+        <Label layoutX="88.0" layoutY="420.0" text="User ID" />
+        <Label layoutX="180.0" layoutY="49.0" text="Modify Appointments" />
+        <TextField fx:id="modAppId" disable="true" layoutX="155.0" layoutY="75.0" promptText="Auto-Generated" />
+        <TextField fx:id="modAppTitle" layoutX="155.0" layoutY="107.0" />
+        <TextField fx:id="modAppType" layoutX="155.0" layoutY="136.0" />
+        <TextField fx:id="modAppDescription" layoutX="155.0" layoutY="165.0" />
+        <TextField fx:id="modAppLocation" layoutX="155.0" layoutY="194.0" />
+        <TextField fx:id="modAppCusID" layoutX="156.0" layoutY="382.0" />
+        <DatePicker fx:id="modAppStart" layoutX="156.0" layoutY="223.0" />
+        <DatePicker fx:id="modAppEnd" layoutX="156.0" layoutY="288.0" />
+        <Button fx:id="modAppSave" layoutX="190.0" layoutY="454.0" mnemonicParsing="false" onAction="#onModAppSave" text="Save" />
+        <Button fx:id="modAppCancel" layoutX="254.0" layoutY="454.0" mnemonicParsing="false" onAction="#onModAppCancel" text="Cancel" />
+      <Label layoutX="79.0" layoutY="259.0" prefHeight="26.0" prefWidth="54.0" text="Start Time" />
+      <Label layoutX="77.0" layoutY="322.0" text="End Time" />
+      <ComboBox fx:id="modStartTIme" layoutX="155.0" layoutY="260.0" prefWidth="150.0" />
+      <ComboBox fx:id="modEndTime" layoutX="155.0" layoutY="318.0" prefWidth="150.0" />
+      <ComboBox fx:id="modContact" layoutX="154.0" layoutY="347.0" prefWidth="150.0" />
+      <ComboBox fx:id="modAppUserId" layoutX="154.0" layoutY="416.0" onAction="#onUserID" prefWidth="150.0" />
+    </children>
+</AnchorPane>

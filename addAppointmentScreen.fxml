@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="546.0" prefWidth="461.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.addAppointmentScreen">
+   <children>
+      <Label layoutX="76.0" layoutY="87.0" text="ID" />
+      <Label layoutX="75.0" layoutY="180.0" text="Description" />
+      <Label layoutX="75.0" layoutY="118.0" text="Title" />
+      <Label layoutX="74.0" layoutY="149.0" text="Type" />
+      <Label layoutX="120.0" layoutY="149.0" />
+      <Label layoutX="140.0" layoutY="169.0" />
+      <Label layoutX="160.0" layoutY="189.0" />
+      <Label layoutX="77.0" layoutY="236.0" prefHeight="26.0" prefWidth="54.0" text="Start Date" />
+      <Label layoutX="76.0" layoutY="308.0" text="End Date" />
+      <Label layoutX="76.0" layoutY="211.0" text="Location" />
+      <Label layoutX="77.0" layoutY="379.0" text="Contact ID" />
+      <Label layoutX="71.0" layoutY="407.0" text="Customer ID" />
+      <Label layoutX="81.0" layoutY="439.0" text="User ID" />
+      <Label layoutX="180.0" layoutY="49.0" text="Add Appointments" />
+      <TextField fx:id="appId" disable="true" layoutX="155.0" layoutY="83.0" promptText="Auto-Generated" />
+      <TextField fx:id="appTitle" layoutX="155.0" layoutY="114.0" />
+      <TextField fx:id="appType" layoutX="155.0" layoutY="145.0" />
+      <TextField fx:id="appDescription" layoutX="155.0" layoutY="176.0" />
+      <TextField fx:id="appLocation" layoutX="155.0" layoutY="207.0" />
+      <DatePicker fx:id="appStart" layoutX="156.0" layoutY="237.0" />
+      <DatePicker fx:id="appEnd" layoutX="156.0" layoutY="304.0" />
+      <Button fx:id="appAdd" layoutX="192.0" layoutY="470.0" mnemonicParsing="false" onAction="#onAppAddClick" text="Add" />
+      <Button fx:id="appCancel" layoutX="255.0" layoutY="470.0" mnemonicParsing="false" onAction="#onAppCancelClick" text="Cancel" />
+      <Label layoutX="77.0" layoutY="272.0" prefHeight="26.0" prefWidth="54.0" text="Start Time" />
+      <ComboBox fx:id="appStartTime" layoutX="154.0" layoutY="273.0" onAction="#onStartTimeEdit" prefWidth="150.0" />
+      <ComboBox fx:id="appEndTime" layoutX="155.0" layoutY="341.0" onAction="#onEndTimeEdit" prefWidth="150.0" />
+      <Label layoutX="80.0" layoutY="345.0" text="End Time" />
+      <ComboBox fx:id="appContactBox" layoutX="154.0" layoutY="375.0" onAction="#onContactEdit" prefWidth="150.0" />
+      <TextField fx:id="appCusID" layoutX="155.0" layoutY="403.0" />
+      <ComboBox fx:id="appUserId" layoutX="154.0" layoutY="435.0" onAction="#onUseredit" prefWidth="150.0" />
+   </children>
+</AnchorPane>
